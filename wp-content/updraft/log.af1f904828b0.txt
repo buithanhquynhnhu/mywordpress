@@ -1,0 +1,86 @@
+0000.025 () Opened log file at time: Wed, 31 Aug 2022 06:51:46 +0000 on http://localhost:7000/myproject/wordpress
+0000.025 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.19 WP: 6.0.1 PHP: 8.1.6 (apache2handler, Windows NT DESKTOP-AO4OS4U 10.0 build 19044 (Windows 10) AMD64) MySQL: 10.4.24-MariaDB (max packet size=33554432) WPLANG: vi Server: Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 44.6M | 46M) multisite: N openssl: OpenSSL 1.1.1n  15 Mar 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.026 () Free space on disk containing Updraft's temporary directory: 35680.8 MB
+0000.094 () Restore setup, now closing connection and starting restore over AJAX.
+0000.017 () Opened log file at time: Wed, 31 Aug 2022 06:51:47 +0000 on http://localhost:7000/myproject/wordpress
+0000.017 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.19 WP: 6.0.1 PHP: 8.1.6 (apache2handler, Windows NT DESKTOP-AO4OS4U 10.0 build 19044 (Windows 10) AMD64) MySQL: 10.4.24-MariaDB (max packet size=33554432) WPLANG: vi Server: Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 42.7M | 46M) multisite: N openssl: OpenSSL 1.1.1n  15 Mar 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.018 () Free space on disk containing Updraft's temporary directory: 35680 MB
+0000.043 () Ensuring WP_Filesystem is setup for a restore
+0000.046 () WP_Filesystem is setup and ready for a restore
+0000.057 () Restore job started. Entities to restore: db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms","wp_wpfront_ure_login_redirect","wp_wpfront_ure_options","wp_wpfront_ure_post_type","wp_wpfront_ure_taxonomy"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.063 () PHP event: code E_WARNING: mkdir(): File exists (line 545, C:\CMS\htdocs\myproject\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.064 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.071 () Entity: db
+0000.071 () restore_backup(backup_file=backup_2022-08-31-0649_My_Wordpress_7199de5a5ca3-db.gz, type=db, info=a:0:{}, last_one=1)
+0000.072 () Unpacking backup... (backup_2022-08-31-0649_My_Wordpress_7199de5a5ca3-db.gz, 0.1 Mb)
+0000.072 () PHP event: code E_WARNING: mkdir(): File exists (line 545, C:\CMS\htdocs\myproject\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.074 () Database successfully unpacked
+0000.076 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.081 () Using direct MySQL access; value of use_mysqli is: 1
+0000.082 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION
+0000.231 () Max packet size: 32 MB
+0000.231 () Entering maintenance mode
+0000.231 () Bật chế độ Bảo trì&#8230;
+0000.301 () Backup of: http://localhost:7000/myproject/wordpress
+0000.303 () Content URL: http://localhost:7000/myproject/wordpress/wp-content
+0000.303 () Uploads URL: http://localhost:7000/myproject/wordpress/wp-content/uploads
+0000.304 () Old table prefix: wp_
+0000.304 () Site information: multisite=0
+0000.304 () Site information: sql_mode=NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION
+0000.306 () New table prefix: 4e_
+0000.312 () Processing table (InnoDB): wp_options - will restore as: 4e_options
+0000.445 () Atomic restore: dropping original table (wp_options)
+0000.463 () Atomic restore: renaming new table (4e_options) to final table name (wp_options)
+0000.484 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0000.515 () Processing table (InnoDB): wp_users - will restore as: 4e_users
+0000.589 () Atomic restore: dropping original table (wp_users)
+0000.605 () Atomic restore: renaming new table (4e_users) to final table name (wp_users)
+0000.625 () Processing table (InnoDB): wp_usermeta - will restore as: 4e_usermeta
+0000.705 () Atomic restore: dropping original table (wp_usermeta)
+0000.721 () Atomic restore: renaming new table (4e_usermeta) to final table name (wp_usermeta)
+0000.740 () Processing table (InnoDB): wp_commentmeta - will restore as: 4e_commentmeta
+0000.799 () Atomic restore: dropping original table (wp_commentmeta)
+0000.816 () Atomic restore: renaming new table (4e_commentmeta) to final table name (wp_commentmeta)
+0000.839 () Processing table (InnoDB): wp_comments - will restore as: 4e_comments
+0000.915 () Atomic restore: dropping original table (wp_comments)
+0000.932 () Atomic restore: renaming new table (4e_comments) to final table name (wp_comments)
+0000.953 () Processing table (InnoDB): wp_links - will restore as: 4e_links
+0001.004 () Atomic restore: dropping original table (wp_links)
+0001.018 () Atomic restore: renaming new table (4e_links) to final table name (wp_links)
+0001.042 () Processing table (InnoDB): wp_postmeta - will restore as: 4e_postmeta
+0001.114 () Atomic restore: dropping original table (wp_postmeta)
+0001.129 () Atomic restore: renaming new table (4e_postmeta) to final table name (wp_postmeta)
+0001.147 () Processing table (InnoDB): wp_posts - will restore as: 4e_posts
+0001.255 () Atomic restore: dropping original table (wp_posts)
+0001.271 () Atomic restore: renaming new table (4e_posts) to final table name (wp_posts)
+0001.289 () Processing table (InnoDB): wp_term_relationships - will restore as: 4e_term_relationships
+0001.355 () Atomic restore: dropping original table (wp_term_relationships)
+0001.410 () Atomic restore: renaming new table (4e_term_relationships) to final table name (wp_term_relationships)
+0001.439 () Processing table (InnoDB): wp_term_taxonomy - will restore as: 4e_term_taxonomy
+0001.508 () Atomic restore: dropping original table (wp_term_taxonomy)
+0001.524 () Atomic restore: renaming new table (4e_term_taxonomy) to final table name (wp_term_taxonomy)
+0001.542 () Processing table (InnoDB): wp_termmeta - will restore as: 4e_termmeta
+0001.596 () Atomic restore: dropping original table (wp_termmeta)
+0001.612 () Atomic restore: renaming new table (4e_termmeta) to final table name (wp_termmeta)
+0001.632 () Processing table (InnoDB): wp_terms - will restore as: 4e_terms
+0001.692 () Atomic restore: dropping original table (wp_terms)
+0001.709 () Atomic restore: renaming new table (4e_terms) to final table name (wp_terms)
+0001.728 () Processing table (InnoDB): wp_wpfront_ure_login_redirect - will restore as: 4e_wpfront_ure_login_redirect
+0001.790 () Atomic restore: dropping original table (wp_wpfront_ure_login_redirect)
+0001.805 () Atomic restore: renaming new table (4e_wpfront_ure_login_redirect) to final table name (wp_wpfront_ure_login_redirect)
+0001.825 () Processing table (InnoDB): wp_wpfront_ure_options - will restore as: 4e_wpfront_ure_options
+0001.884 () Atomic restore: dropping original table (wp_wpfront_ure_options)
+0001.898 () Atomic restore: renaming new table (4e_wpfront_ure_options) to final table name (wp_wpfront_ure_options)
+0001.918 () Processing table (InnoDB): wp_wpfront_ure_post_type - will restore as: 4e_wpfront_ure_post_type
+0001.971 () Atomic restore: dropping original table (wp_wpfront_ure_post_type)
+0001.991 () Atomic restore: renaming new table (4e_wpfront_ure_post_type) to final table name (wp_wpfront_ure_post_type)
+0002.011 () Processing table (InnoDB): wp_wpfront_ure_taxonomy - will restore as: 4e_wpfront_ure_taxonomy
+0002.058 () Database queries processed: 50 in 1.97 seconds
+0002.071 () Unlocking database and leaving maintenance mode
+0002.071 () Vô hiệu hóa chế độ bảo trì&#8230;
+0002.072 () Atomic restore: dropping original table (wp_wpfront_ure_taxonomy)
+0002.086 () Atomic restore: renaming new table (4e_wpfront_ure_taxonomy) to final table name (wp_wpfront_ure_taxonomy)
+0002.108 () Finished: lines processed: 51 in 2.02 seconds
+0002.109 () Cleaning up rubbish...
+0002.160 () Restore successful!
+0002.161 () Restore successful
